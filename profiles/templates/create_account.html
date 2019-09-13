@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <h1>join</h1>
+        <p class="text-muted">Join</p>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">
+              <i class="icon-user"></i>
+            </span>
+          </div>
+          {% csrf_token %}
+          <!-- <input class="form-control" type="text" name="username" placeholder="Username">
+        </div>
+        <div class="input-group mb-4">
+          <div class="input-group-prepend">
+            <span class="input-group-text">
+              <i class="icon-lock"></i>
+            </span>
+          </div>
+          <input class="form-control" type="password" name="password" placeholder="Password">
+        </div> -->
+        <div class="row">
+          <div class="col-6">
+            <button class="btn btn-primary px-4" type="submit">Join Blockchain</button>
+          </div>
+          <div class="col-6 text-right">
+            <button class="btn btn-link px-0" type="button">Forgot password?</button>
+          </div>
+        </div>
+        </form>
+</body>
+</html>
